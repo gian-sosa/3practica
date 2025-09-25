@@ -27,7 +27,7 @@ jobs:
 
   docker:
     runs-on: ubuntu-latest
-    needs: test_and_build # <- Solo corre si CI pasa
+    needs: test_and_build # <- Sólo corre si CI pasa
     if: github.ref == 'refs/heads/main'
     steps:
       - name: Checkout repository
